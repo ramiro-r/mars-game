@@ -1180,7 +1180,7 @@ function preload() {
 
 function setup() {
 	textFont(customFont);
-	createCanvas(1024, 576);
+	createCanvas(Math.min(window.innerWidth, 1024), Math.min(window.innerHeight, 576));
 
 	setupColors();
 	setupScene();
